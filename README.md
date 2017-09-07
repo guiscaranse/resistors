@@ -1,0 +1,2 @@
+# resistors
+Associação de Resistores 
