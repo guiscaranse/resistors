@@ -10,10 +10,13 @@
         Else
             Select Case ComboBox1.SelectedItem
                 Case "Série"
+                    My.Settings.nResistors = ComboBox2.SelectedItem
                     ConfigResistor1.Show()
                     Me.Close()
             End Select
         End If
 
     End Sub
+
+
 End Class

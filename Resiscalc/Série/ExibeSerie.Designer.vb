@@ -25,11 +25,17 @@ Partial Class ExibeSerie
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ExibeSerie))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.resis11 = New System.Windows.Forms.Label()
+        Me.resistEqValueLabel1 = New System.Windows.Forms.Label()
+        Me.ResisEq1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.TabControl1.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -48,6 +54,10 @@ Partial Class ExibeSerie
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.resis11)
+        Me.TabPage1.Controls.Add(Me.resistEqValueLabel1)
+        Me.TabPage1.Controls.Add(Me.ResisEq1)
+        Me.TabPage1.Controls.Add(Me.PictureBox1)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
@@ -56,12 +66,50 @@ Partial Class ExibeSerie
         Me.TabPage1.Text = "TabPage1"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
+        'resis11
+        '
+        Me.resis11.AutoSize = True
+        Me.resis11.Location = New System.Drawing.Point(255, 199)
+        Me.resis11.Name = "resis11"
+        Me.resis11.Size = New System.Drawing.Size(39, 13)
+        Me.resis11.TabIndex = 1
+        Me.resis11.Text = "Label1"
+        Me.resis11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'resistEqValueLabel1
+        '
+        Me.resistEqValueLabel1.AutoSize = True
+        Me.resistEqValueLabel1.Location = New System.Drawing.Point(8, 343)
+        Me.resistEqValueLabel1.Name = "resistEqValueLabel1"
+        Me.resistEqValueLabel1.Size = New System.Drawing.Size(39, 13)
+        Me.resistEqValueLabel1.TabIndex = 3
+        Me.resistEqValueLabel1.Text = "Label3"
+        '
+        'ResisEq1
+        '
+        Me.ResisEq1.AutoSize = True
+        Me.ResisEq1.Location = New System.Drawing.Point(8, 325)
+        Me.ResisEq1.Name = "ResisEq1"
+        Me.ResisEq1.Size = New System.Drawing.Size(124, 13)
+        Me.ResisEq1.TabIndex = 2
+        Me.ResisEq1.Text = "Resistência Equivalente:"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.Resiscalc.My.Resources.Resources.series1
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.Location = New System.Drawing.Point(86, 27)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(368, 256)
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'TabPage2
         '
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(515, 337)
+        Me.TabPage2.Size = New System.Drawing.Size(539, 361)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "TabPage2"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -70,7 +118,7 @@ Partial Class ExibeSerie
         '
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(515, 337)
+        Me.TabPage3.Size = New System.Drawing.Size(539, 361)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "TabPage3"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -79,7 +127,7 @@ Partial Class ExibeSerie
         '
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(515, 337)
+        Me.TabPage4.Size = New System.Drawing.Size(539, 361)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "TabPage4"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -88,7 +136,7 @@ Partial Class ExibeSerie
         '
         Me.TabPage5.Location = New System.Drawing.Point(4, 22)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Size = New System.Drawing.Size(515, 337)
+        Me.TabPage5.Size = New System.Drawing.Size(539, 361)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "TabPage5"
         Me.TabPage5.UseVisualStyleBackColor = True
@@ -106,6 +154,9 @@ Partial Class ExibeSerie
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Exibição"
         Me.TabControl1.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
+        Me.TabPage1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -115,4 +166,8 @@ Partial Class ExibeSerie
     Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage4 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage5 As System.Windows.Forms.TabPage
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents resistEqValueLabel1 As System.Windows.Forms.Label
+    Friend WithEvents ResisEq1 As System.Windows.Forms.Label
+    Friend WithEvents resis11 As System.Windows.Forms.Label
 End Class
