@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ExibeSerie
+Partial Class ExibeParalela
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,26 +22,23 @@ Partial Class ExibeSerie
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ExibeSerie))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ExibeParalela))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.resis11 = New System.Windows.Forms.Label()
         Me.resistEqValueLabel1 = New System.Windows.Forms.Label()
         Me.ResisEq1 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.resis22 = New System.Windows.Forms.Label()
         Me.resis21 = New System.Windows.Forms.Label()
         Me.resistEqValueLabel2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.resis33 = New System.Windows.Forms.Label()
         Me.resis32 = New System.Windows.Forms.Label()
         Me.resis31 = New System.Windows.Forms.Label()
         Me.resistEqValueLabel3 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.resis44 = New System.Windows.Forms.Label()
         Me.resis43 = New System.Windows.Forms.Label()
@@ -49,7 +46,6 @@ Partial Class ExibeSerie
         Me.resis41 = New System.Windows.Forms.Label()
         Me.resistEqValueLabel4 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.resis55 = New System.Windows.Forms.Label()
         Me.resis54 = New System.Windows.Forms.Label()
@@ -58,17 +54,21 @@ Partial Class ExibeSerie
         Me.resis51 = New System.Windows.Forms.Label()
         Me.resistEqValueLabel5 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage3.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage4.SuspendLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage5.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -128,16 +128,6 @@ Partial Class ExibeSerie
         Me.ResisEq1.TabIndex = 2
         Me.ResisEq1.Text = "Resistência Equivalente:"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = Global.Resiscalc.My.Resources.Resources.series1
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(86, 27)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(368, 256)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
         'TabPage2
         '
         Me.TabPage2.Controls.Add(Me.resis22)
@@ -156,7 +146,7 @@ Partial Class ExibeSerie
         'resis22
         '
         Me.resis22.AutoSize = True
-        Me.resis22.Location = New System.Drawing.Point(244, 33)
+        Me.resis22.Location = New System.Drawing.Point(344, 151)
         Me.resis22.Name = "resis22"
         Me.resis22.Size = New System.Drawing.Size(39, 13)
         Me.resis22.TabIndex = 8
@@ -166,7 +156,7 @@ Partial Class ExibeSerie
         'resis21
         '
         Me.resis21.AutoSize = True
-        Me.resis21.Location = New System.Drawing.Point(145, 95)
+        Me.resis21.Location = New System.Drawing.Point(249, 151)
         Me.resis21.Name = "resis21"
         Me.resis21.Size = New System.Drawing.Size(39, 13)
         Me.resis21.TabIndex = 5
@@ -191,16 +181,6 @@ Partial Class ExibeSerie
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Resistência Equivalente:"
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox2.Location = New System.Drawing.Point(49, 21)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(395, 268)
-        Me.PictureBox2.TabIndex = 4
-        Me.PictureBox2.TabStop = False
-        '
         'TabPage3
         '
         Me.TabPage3.Controls.Add(Me.resis33)
@@ -219,7 +199,7 @@ Partial Class ExibeSerie
         'resis33
         '
         Me.resis33.AutoSize = True
-        Me.resis33.Location = New System.Drawing.Point(417, 130)
+        Me.resis33.Location = New System.Drawing.Point(391, 150)
         Me.resis33.Name = "resis33"
         Me.resis33.Size = New System.Drawing.Size(39, 13)
         Me.resis33.TabIndex = 14
@@ -229,7 +209,7 @@ Partial Class ExibeSerie
         'resis32
         '
         Me.resis32.AutoSize = True
-        Me.resis32.Location = New System.Drawing.Point(261, 31)
+        Me.resis32.Location = New System.Drawing.Point(312, 150)
         Me.resis32.Name = "resis32"
         Me.resis32.Size = New System.Drawing.Size(39, 13)
         Me.resis32.TabIndex = 13
@@ -239,7 +219,7 @@ Partial Class ExibeSerie
         'resis31
         '
         Me.resis31.AutoSize = True
-        Me.resis31.Location = New System.Drawing.Point(159, 93)
+        Me.resis31.Location = New System.Drawing.Point(226, 150)
         Me.resis31.Name = "resis31"
         Me.resis31.Size = New System.Drawing.Size(39, 13)
         Me.resis31.TabIndex = 10
@@ -264,16 +244,6 @@ Partial Class ExibeSerie
         Me.Label5.TabIndex = 11
         Me.Label5.Text = "Resistência Equivalente:"
         '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackgroundImage = Global.Resiscalc.My.Resources.Resources.series3
-        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox3.Location = New System.Drawing.Point(39, 19)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(436, 268)
-        Me.PictureBox3.TabIndex = 9
-        Me.PictureBox3.TabStop = False
-        '
         'TabPage4
         '
         Me.TabPage4.Controls.Add(Me.resis44)
@@ -293,7 +263,8 @@ Partial Class ExibeSerie
         'resis44
         '
         Me.resis44.AutoSize = True
-        Me.resis44.Location = New System.Drawing.Point(400, 221)
+        Me.resis44.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.resis44.Location = New System.Drawing.Point(423, 161)
         Me.resis44.Name = "resis44"
         Me.resis44.Size = New System.Drawing.Size(39, 13)
         Me.resis44.TabIndex = 21
@@ -302,7 +273,8 @@ Partial Class ExibeSerie
         'resis43
         '
         Me.resis43.AutoSize = True
-        Me.resis43.Location = New System.Drawing.Point(400, 118)
+        Me.resis43.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.resis43.Location = New System.Drawing.Point(349, 161)
         Me.resis43.Name = "resis43"
         Me.resis43.Size = New System.Drawing.Size(39, 13)
         Me.resis43.TabIndex = 20
@@ -312,7 +284,8 @@ Partial Class ExibeSerie
         'resis42
         '
         Me.resis42.AutoSize = True
-        Me.resis42.Location = New System.Drawing.Point(262, 33)
+        Me.resis42.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.resis42.Location = New System.Drawing.Point(274, 161)
         Me.resis42.Name = "resis42"
         Me.resis42.Size = New System.Drawing.Size(39, 13)
         Me.resis42.TabIndex = 19
@@ -322,7 +295,8 @@ Partial Class ExibeSerie
         'resis41
         '
         Me.resis41.AutoSize = True
-        Me.resis41.Location = New System.Drawing.Point(171, 84)
+        Me.resis41.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.resis41.Location = New System.Drawing.Point(193, 161)
         Me.resis41.Name = "resis41"
         Me.resis41.Size = New System.Drawing.Size(39, 13)
         Me.resis41.TabIndex = 16
@@ -347,16 +321,6 @@ Partial Class ExibeSerie
         Me.Label7.TabIndex = 17
         Me.Label7.Text = "Resistência Equivalente:"
         '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackgroundImage = Global.Resiscalc.My.Resources.Resources.series4
-        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox4.Location = New System.Drawing.Point(40, 21)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(436, 268)
-        Me.PictureBox4.TabIndex = 15
-        Me.PictureBox4.TabStop = False
-        '
         'TabPage5
         '
         Me.TabPage5.Controls.Add(Me.resis55)
@@ -377,7 +341,7 @@ Partial Class ExibeSerie
         'resis55
         '
         Me.resis55.AutoSize = True
-        Me.resis55.Location = New System.Drawing.Point(267, 262)
+        Me.resis55.Location = New System.Drawing.Point(436, 128)
         Me.resis55.Name = "resis55"
         Me.resis55.Size = New System.Drawing.Size(39, 13)
         Me.resis55.TabIndex = 29
@@ -386,7 +350,7 @@ Partial Class ExibeSerie
         'resis54
         '
         Me.resis54.AutoSize = True
-        Me.resis54.Location = New System.Drawing.Point(396, 208)
+        Me.resis54.Location = New System.Drawing.Point(355, 128)
         Me.resis54.Name = "resis54"
         Me.resis54.Size = New System.Drawing.Size(39, 13)
         Me.resis54.TabIndex = 28
@@ -395,7 +359,7 @@ Partial Class ExibeSerie
         'resis53
         '
         Me.resis53.AutoSize = True
-        Me.resis53.Location = New System.Drawing.Point(396, 118)
+        Me.resis53.Location = New System.Drawing.Point(290, 128)
         Me.resis53.Name = "resis53"
         Me.resis53.Size = New System.Drawing.Size(39, 13)
         Me.resis53.TabIndex = 27
@@ -405,7 +369,7 @@ Partial Class ExibeSerie
         'resis52
         '
         Me.resis52.AutoSize = True
-        Me.resis52.Location = New System.Drawing.Point(258, 33)
+        Me.resis52.Location = New System.Drawing.Point(217, 128)
         Me.resis52.Name = "resis52"
         Me.resis52.Size = New System.Drawing.Size(39, 13)
         Me.resis52.TabIndex = 26
@@ -415,7 +379,7 @@ Partial Class ExibeSerie
         'resis51
         '
         Me.resis51.AutoSize = True
-        Me.resis51.Location = New System.Drawing.Point(167, 84)
+        Me.resis51.Location = New System.Drawing.Point(145, 128)
         Me.resis51.Name = "resis51"
         Me.resis51.Size = New System.Drawing.Size(39, 13)
         Me.resis51.TabIndex = 23
@@ -440,17 +404,57 @@ Partial Class ExibeSerie
         Me.Label9.TabIndex = 24
         Me.Label9.Text = "Resistência Equivalente:"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.Resiscalc.My.Resources.Resources.paralela1
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.Location = New System.Drawing.Point(86, 27)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(368, 256)
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackgroundImage = Global.Resiscalc.My.Resources.Resources.paralela2
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox2.Location = New System.Drawing.Point(49, 21)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(395, 268)
+        Me.PictureBox2.TabIndex = 4
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackgroundImage = Global.Resiscalc.My.Resources.Resources.paralela3
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox3.Location = New System.Drawing.Point(39, 19)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(436, 268)
+        Me.PictureBox3.TabIndex = 9
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackgroundImage = Global.Resiscalc.My.Resources.Resources.paralela4
+        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox4.Location = New System.Drawing.Point(12, 3)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(511, 320)
+        Me.PictureBox4.TabIndex = 15
+        Me.PictureBox4.TabStop = False
+        '
         'PictureBox5
         '
-        Me.PictureBox5.BackgroundImage = Global.Resiscalc.My.Resources.Resources.series5
-        Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox5.Location = New System.Drawing.Point(36, 21)
+        Me.PictureBox5.BackgroundImage = Global.Resiscalc.My.Resources.Resources.paralela5
+        Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox5.Location = New System.Drawing.Point(20, 49)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(436, 268)
+        Me.PictureBox5.Size = New System.Drawing.Size(495, 164)
         Me.PictureBox5.TabIndex = 22
         Me.PictureBox5.TabStop = False
         '
-        'ExibeSerie
+        'ExibeParalela
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -459,24 +463,24 @@ Partial Class ExibeSerie
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
-        Me.Name = "ExibeSerie"
+        Me.Name = "ExibeParalela"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Exibição (Série)"
+        Me.Text = "Exibição (Paralela)"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage4.PerformLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage5.ResumeLayout(False)
         Me.TabPage5.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
