@@ -10,6 +10,8 @@
         Select Case My.Settings.nResistors
             Case 1
                 aLabels = {resis11}
+            Case 2
+                aLabels = {resis21, resis22}
         End Select
         Dim index As Integer = 0
         ' Navega por cada resistor
@@ -21,7 +23,7 @@
                     Dim nUpDown As NumericUpDown = DirectCast(ChildCntrol, NumericUpDown)
                     Dim l As Label = aLabels(index)
 
-                    l.Text = "R = " & nUpDown.Value & " Ω"
+                    l.Text = "R" & index + 1 & " = " & nUpDown.Value & " Ω"
                     ReDim aResis(index + 1)
                     aResis(index) = nUpDown.Value
                 End If
@@ -33,6 +35,8 @@
             rEq += x
         Next
         resistEqValueLabel1.Text = rEq & " Ω"
+        resistEqValueLabel2.Text = rEq & " Ω"
     End Sub
+
 
 End Class

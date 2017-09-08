@@ -73,8 +73,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="ExtensionAttribute.vb" />
-    <Compile Include="Extensions.vb" />
     <Compile Include="SelectAssocia.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +166,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\series1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\series2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
