@@ -2,6 +2,7 @@
     Dim aLabels() As Label = {}
     Dim aResis As Double() = {}
     Dim rEq As Double = 0
+    Dim rEqPar As Double = 0
     Private Sub ExibeMista_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TabControl1.Appearance = TabAppearance.FlatButtons
         TabControl1.ItemSize = New Size(0, 1)
@@ -37,15 +38,22 @@
         Next
         ReDim Preserve aResis(index - 1) 'Remove uma casa vazia, para evitar divisão por 0
         ' Calcula Resistência Equivalente
+        Dim count As Integer = 1
         For Each x In aResis
-            If Not (x = 0) Then
-                rEq += Math.Round((1 / x), 6)
+            If count < ConfigResistor3.hMany Then
+                rEq += x
+            Else
+                'Paralelo
+                If Not (x = 0) Then
+                    rEqPar += Math.Round((1 / x), 6)
+                End If
             End If
-
+            count += 1
         Next
-        If Not (rEq = 0) Then
-            rEq = Math.Round(Math.Pow(rEq, -1))
+        If Not (rEqPar = 0) Then
+            rEqPar = Math.Round(Math.Pow(rEqPar, -1))
         End If
+        rEq += rEqPar
         resistEqValueLabel1.Text = rEq & " Ω"
         resistEqValueLabel2.Text = rEq & " Ω"
         resistEqValueLabel3.Text = rEq & " Ω"

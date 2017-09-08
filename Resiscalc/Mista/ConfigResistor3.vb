@@ -1,8 +1,8 @@
 ﻿Public Class ConfigResistor3
-
+    Public hMany As Double = Math.Round(SelectAssocia.ComboBox2.SelectedItem / 2)
     Private Sub ConfigResistor3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         '' Quantos em paralelo sendo que da prioridade para os paralelos
-        Dim hMany As Double = Math.Round(SelectAssocia.ComboBox2.SelectedItem / 2)
+        '' Menor que hmany = série
         For x As Integer = 1 To SelectAssocia.ComboBox2.SelectedItem
             Dim newPage As New TabPage()
             Dim resistValue As New NumericUpDown()
@@ -16,7 +16,11 @@
             resistText.Text = "Qual a resistência do resistor (Em OHMs)?"
             resistText.AutoSize = True
             resistText.Location = New System.Drawing.Point((Me.DisplayRectangle.Width - resistText.Size.Width - 90) / 2, resistIcon.Size.Height + resistIcon.Location.Y + 5)
-            newPage.Text = "Resistor " & x
+            If x < hMany Then
+                newPage.Text = "Resistor " & x & " (Série)"
+            Else
+                newPage.Text = "Resistor " & x & " (Paralelo)"
+            End If
             newPage.Controls.Add(resistIcon)
             newPage.Controls.Add(resistText)
             newPage.Controls.Add(resistValue)

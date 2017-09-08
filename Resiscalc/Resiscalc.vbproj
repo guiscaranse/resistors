@@ -170,6 +170,9 @@
     <EmbeddedResource Include="Mista\ConfigResistor3.resx">
       <DependentUpon>ConfigResistor3.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mista\ExibeMista.resx">
+      <DependentUpon>ExibeMista.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Paralela\ConfigResistor2.resx">
       <DependentUpon>ConfigResistor2.vb</DependentUpon>
     </EmbeddedResource>
@@ -248,6 +251,7 @@
     <None Include="Resources\paralela5.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\mista3.png" />
     <Content Include="transfer.ico" />
   </ItemGroup>
   <ItemGroup>
