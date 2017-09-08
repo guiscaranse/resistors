@@ -264,7 +264,7 @@ Partial Class ExibeMista
         '
         Me.resis44.AutoSize = True
         Me.resis44.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.resis44.Location = New System.Drawing.Point(423, 161)
+        Me.resis44.Location = New System.Drawing.Point(423, 154)
         Me.resis44.Name = "resis44"
         Me.resis44.Size = New System.Drawing.Size(39, 13)
         Me.resis44.TabIndex = 21
@@ -274,7 +274,7 @@ Partial Class ExibeMista
         '
         Me.resis43.AutoSize = True
         Me.resis43.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.resis43.Location = New System.Drawing.Point(349, 161)
+        Me.resis43.Location = New System.Drawing.Point(309, 154)
         Me.resis43.Name = "resis43"
         Me.resis43.Size = New System.Drawing.Size(39, 13)
         Me.resis43.TabIndex = 20
@@ -285,7 +285,7 @@ Partial Class ExibeMista
         '
         Me.resis42.AutoSize = True
         Me.resis42.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.resis42.Location = New System.Drawing.Point(274, 161)
+        Me.resis42.Location = New System.Drawing.Point(178, 264)
         Me.resis42.Name = "resis42"
         Me.resis42.Size = New System.Drawing.Size(39, 13)
         Me.resis42.TabIndex = 19
@@ -296,7 +296,7 @@ Partial Class ExibeMista
         '
         Me.resis41.AutoSize = True
         Me.resis41.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.resis41.Location = New System.Drawing.Point(193, 161)
+        Me.resis41.Location = New System.Drawing.Point(178, 43)
         Me.resis41.Name = "resis41"
         Me.resis41.Size = New System.Drawing.Size(39, 13)
         Me.resis41.TabIndex = 16
@@ -341,7 +341,7 @@ Partial Class ExibeMista
         'resis55
         '
         Me.resis55.AutoSize = True
-        Me.resis55.Location = New System.Drawing.Point(436, 128)
+        Me.resis55.Location = New System.Drawing.Point(436, 124)
         Me.resis55.Name = "resis55"
         Me.resis55.Size = New System.Drawing.Size(39, 13)
         Me.resis55.TabIndex = 29
@@ -350,7 +350,7 @@ Partial Class ExibeMista
         'resis54
         '
         Me.resis54.AutoSize = True
-        Me.resis54.Location = New System.Drawing.Point(355, 128)
+        Me.resis54.Location = New System.Drawing.Point(347, 124)
         Me.resis54.Name = "resis54"
         Me.resis54.Size = New System.Drawing.Size(39, 13)
         Me.resis54.TabIndex = 28
@@ -359,7 +359,7 @@ Partial Class ExibeMista
         'resis53
         '
         Me.resis53.AutoSize = True
-        Me.resis53.Location = New System.Drawing.Point(290, 128)
+        Me.resis53.Location = New System.Drawing.Point(259, 124)
         Me.resis53.Name = "resis53"
         Me.resis53.Size = New System.Drawing.Size(39, 13)
         Me.resis53.TabIndex = 27
@@ -369,7 +369,7 @@ Partial Class ExibeMista
         'resis52
         '
         Me.resis52.AutoSize = True
-        Me.resis52.Location = New System.Drawing.Point(217, 128)
+        Me.resis52.Location = New System.Drawing.Point(149, 164)
         Me.resis52.Name = "resis52"
         Me.resis52.Size = New System.Drawing.Size(39, 13)
         Me.resis52.TabIndex = 26
@@ -379,7 +379,7 @@ Partial Class ExibeMista
         'resis51
         '
         Me.resis51.AutoSize = True
-        Me.resis51.Location = New System.Drawing.Point(145, 128)
+        Me.resis51.Location = New System.Drawing.Point(149, 82)
         Me.resis51.Name = "resis51"
         Me.resis51.Size = New System.Drawing.Size(39, 13)
         Me.resis51.TabIndex = 23
@@ -436,7 +436,7 @@ Partial Class ExibeMista
         '
         'PictureBox4
         '
-        Me.PictureBox4.BackgroundImage = Global.Resiscalc.My.Resources.Resources.paralela4
+        Me.PictureBox4.BackgroundImage = Global.Resiscalc.My.Resources.Resources.mista4
         Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.PictureBox4.Location = New System.Drawing.Point(12, 3)
         Me.PictureBox4.Name = "PictureBox4"
@@ -446,11 +446,11 @@ Partial Class ExibeMista
         '
         'PictureBox5
         '
-        Me.PictureBox5.BackgroundImage = Global.Resiscalc.My.Resources.Resources.paralela5
+        Me.PictureBox5.BackgroundImage = Global.Resiscalc.My.Resources.Resources.mista5
         Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox5.Location = New System.Drawing.Point(20, 49)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(495, 164)
+        Me.PictureBox5.Size = New System.Drawing.Size(495, 169)
         Me.PictureBox5.TabIndex = 22
         Me.PictureBox5.TabStop = False
         '

@@ -40,7 +40,7 @@
         ' Calcula Resistência Equivalente
         Dim count As Integer = 1
         For Each x In aResis
-            If count < ConfigResistor3.hMany Then
+            If count <= ConfigResistor3.hMany Then
                 rEq += x
             Else
                 'Paralelo

@@ -1,5 +1,5 @@
 ﻿Public Class ConfigResistor3
-    Public hMany As Double = Math.Round(SelectAssocia.ComboBox2.SelectedItem / 2)
+    Public hMany As Double = Math.Floor(SelectAssocia.ComboBox2.SelectedItem / 2)
     Private Sub ConfigResistor3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         '' Quantos em paralelo sendo que da prioridade para os paralelos
         '' Menor que hmany = série
