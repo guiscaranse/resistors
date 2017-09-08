@@ -22,8 +22,44 @@ Partial Class ConfigResistor3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ConfigResistor3))
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'TabControl1
+        '
+        Me.TabControl1.Location = New System.Drawing.Point(12, 15)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(395, 262)
+        Me.TabControl1.TabIndex = 0
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(2, 257)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(86, 31)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Pronto!"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'ConfigResistor3
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Text = "ConfigResistor3"
+        Me.ClientSize = New System.Drawing.Size(419, 290)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.TabControl1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
+        Me.Name = "ConfigResistor3"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Configurar Resistores"
+        Me.ResumeLayout(False)
+
     End Sub
+    Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
