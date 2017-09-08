@@ -63,33 +63,33 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property logo_ifba() As System.Drawing.Bitmap
+        Friend ReadOnly Property logoifba() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("logo-ifba", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
+                Dim obj As Object = ResourceManager.GetObject("logoifba", resourceCulture)
+                Return CType(obj, System.Drawing.Bitmap)
             End Get
         End Property
-        
+
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property resistor() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("resistor", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
+                Return CType(obj, System.Drawing.Bitmap)
             End Get
         End Property
-        
+
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property resistor_icon() As System.Drawing.Bitmap
+        Friend ReadOnly Property resistorIcon() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("resistor-icon", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
+                Dim obj As Object = ResourceManager.GetObject("resistorIcon", resourceCulture)
+                Return CType(obj, System.Drawing.Bitmap)
             End Get
         End Property
-        
+
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
@@ -106,6 +106,36 @@ Namespace My.Resources
         Friend ReadOnly Property series2() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("series2", resourceCulture)
+                Return CType(obj, System.Drawing.Bitmap)
+            End Get
+        End Property
+
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property series3() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("series3", resourceCulture)
+                Return CType(obj, System.Drawing.Bitmap)
+            End Get
+        End Property
+
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property series4() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("series4", resourceCulture)
+                Return CType(obj, System.Drawing.Bitmap)
+            End Get
+        End Property
+
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property series5() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("series5", resourceCulture)
                 Return CType(obj, System.Drawing.Bitmap)
             End Get
         End Property

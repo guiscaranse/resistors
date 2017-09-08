@@ -12,6 +12,12 @@
                 aLabels = {resis11}
             Case 2
                 aLabels = {resis21, resis22}
+            Case 3
+                aLabels = {resis31, resis32, resis33}
+            Case 4
+                aLabels = {resis41, resis42, resis43, resis44}
+            Case 5
+                aLabels = {resis51, resis52, resis53, resis54, resis55}
         End Select
         Dim index As Integer = 0
         ' Navega por cada resistor
@@ -22,9 +28,8 @@
                 If TypeOf ChildCntrol Is NumericUpDown Then
                     Dim nUpDown As NumericUpDown = DirectCast(ChildCntrol, NumericUpDown)
                     Dim l As Label = aLabels(index)
-
                     l.Text = "R" & index + 1 & " = " & nUpDown.Value & " Ω"
-                    ReDim aResis(index + 1)
+                    ReDim Preserve aResis(index + 1)
                     aResis(index) = nUpDown.Value
                 End If
             Next
@@ -36,7 +41,8 @@
         Next
         resistEqValueLabel1.Text = rEq & " Ω"
         resistEqValueLabel2.Text = rEq & " Ω"
+        resistEqValueLabel3.Text = rEq & " Ω"
+        resistEqValueLabel4.Text = rEq & " Ω"
+        resistEqValueLabel5.Text = rEq & " Ω"
     End Sub
-
-
 End Class

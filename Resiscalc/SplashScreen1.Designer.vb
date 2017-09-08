@@ -101,7 +101,7 @@ Partial Class SplashScreen1
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackgroundImage = Global.Resiscalc.My.Resources.Resources.resistor_icon
+        Me.PictureBox1.BackgroundImage = Global.Resiscalc.My.Resources.Resources.resistorIcon
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
@@ -112,7 +112,7 @@ Partial Class SplashScreen1
         '
         'PictureBox2
         '
-        Me.PictureBox2.BackgroundImage = Global.Resiscalc.My.Resources.Resources.logo_ifba
+        Me.PictureBox2.BackgroundImage = Global.Resiscalc.My.Resources.Resources.logoifba
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.PictureBox2.Location = New System.Drawing.Point(3, 225)
         Me.PictureBox2.Name = "PictureBox2"
