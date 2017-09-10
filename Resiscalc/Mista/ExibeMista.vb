@@ -51,7 +51,7 @@
             count += 1
         Next
         If Not (rEqPar = 0) Then
-            rEqPar = Math.Round(Math.Pow(rEqPar, -1))
+            rEqPar = Math.Round(Math.Pow(rEqPar, -1), 2)
         End If
         rEq += rEqPar
         resistEqValueLabel1.Text = rEq & " Ω"
