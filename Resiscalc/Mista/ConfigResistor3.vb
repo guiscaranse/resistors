@@ -16,7 +16,7 @@
             resistText.Text = "Qual a resistência do resistor (Em OHMs)?"
             resistText.AutoSize = True
             resistText.Location = New System.Drawing.Point((Me.DisplayRectangle.Width - resistText.Size.Width - 90) / 2, resistIcon.Size.Height + resistIcon.Location.Y + 5)
-            If x < hMany Then
+            If x <= hMany Then
                 newPage.Text = "Resistor " & x & " (Série)"
             Else
                 newPage.Text = "Resistor " & x & " (Paralelo)"
