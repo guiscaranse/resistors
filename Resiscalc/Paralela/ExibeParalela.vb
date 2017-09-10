@@ -44,7 +44,7 @@
 
         Next
         If Not (rEq = 0) Then
-            rEq = Math.Round(Math.Pow(rEq, -1))
+            rEq = Math.Round(Math.Pow(rEq, -1), 2)
         End If
         resistEqValueLabel1.Text = rEq & " Ω"
         resistEqValueLabel2.Text = rEq & " Ω"
