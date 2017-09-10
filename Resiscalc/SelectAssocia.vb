@@ -14,8 +14,17 @@
                     ConfigResistor1.Show()
                     Me.Close()
                 Case "Paralela"
-                    ConfigResistor2.Show()
-                    Me.Close()
+                    If ComboBox2.SelectedItem < 2 Then
+                        MessageBox.Show("Para associações em paralelo, é necessário escolher no mínimo 2 resistores.", _
+                        "Erro!", _
+                        MessageBoxButtons.OK, _
+                        MessageBoxIcon.Exclamation, _
+                        MessageBoxDefaultButton.Button1)
+                    Else
+                        ConfigResistor2.Show()
+                        Me.Close()
+                    End If
+
                 Case "Mista"
                     If ComboBox2.SelectedItem < 3 Then
                         MessageBox.Show("Para associações mistas, é necessário escolher no mínimo 3 resistores.", _
@@ -30,6 +39,10 @@
 
             End Select
         End If
+
+    End Sub
+
+    Private Sub SelectAssocia_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class
