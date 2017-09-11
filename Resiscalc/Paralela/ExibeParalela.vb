@@ -2,6 +2,7 @@
     Dim aLabels() As Label = {}
     Dim aResis As Double() = {}
     Dim rEq As Double = 0
+    Dim cCircuito As Boolean = False
     Private Sub ExibeParalela_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TabControl1.Appearance = TabAppearance.FlatButtons
         TabControl1.ItemSize = New Size(0, 1)
@@ -40,11 +41,16 @@
         For Each x In aResis
             If Not (x = 0) Then
                 rEq += Math.Round((1 / x), 6)
+            Else
+                cCircuito = True
             End If
 
         Next
         If Not (rEq = 0) Then
             rEq = Math.Round(Math.Pow(rEq, -1), 2)
+        End If
+        If cCircuito = True Then
+            rEq = 0
         End If
         resistEqValueLabel1.Text = rEq & " Ω"
         resistEqValueLabel2.Text = rEq & " Ω"

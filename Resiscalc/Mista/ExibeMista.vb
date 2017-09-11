@@ -3,6 +3,7 @@
     Dim aResis As Double() = {}
     Dim rEq As Double = 0
     Dim rEqPar As Double = 0
+    Dim cCircuito As Boolean = False
     Private Sub ExibeMista_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TabControl1.Appearance = TabAppearance.FlatButtons
         TabControl1.ItemSize = New Size(0, 1)
@@ -46,18 +47,24 @@
                 'Paralelo
                 If Not (x = 0) Then
                     rEqPar += Math.Round((1 / x), 6)
+                Else
+                    cCircuito = True
                 End If
+
             End If
             count += 1
         Next
         If Not (rEqPar = 0) Then
             rEqPar = Math.Round(Math.Pow(rEqPar, -1), 2)
         End If
-        rEq += rEqPar
+        If cCircuito = False Then
+            rEq += rEqPar
+        End If
         resistEqValueLabel1.Text = rEq & " Ω"
         resistEqValueLabel2.Text = rEq & " Ω"
         resistEqValueLabel3.Text = rEq & " Ω"
         resistEqValueLabel4.Text = rEq & " Ω"
         resistEqValueLabel5.Text = rEq & " Ω"
     End Sub
+
 End Class
